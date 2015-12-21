@@ -2,7 +2,7 @@
   "name": "react_animation_demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "demo.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,3 +1,16 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .pageSlider-leave {
   transform: translate3d(0, 0, 0);
 }
@@ -27,6 +40,8 @@
 
 h2 {
   text-align: center;
+  background: white;
+  color: black;
 }
 
 .example-enter {
@@ -53,5 +68,23 @@ h2 {
 
 .example-appear.example-appear-active {
   opacity: 1;
-  transition: opacity 1000ms ease-in;
+  transition: opacity 1500ms ease-in;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  cursor: pointer;
 }

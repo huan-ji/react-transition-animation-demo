@@ -13,13 +13,17 @@ var Child = React.createClass({
 
   render: function () {
     return (
-      <div className="page" style={{backgroundColor: "lightgreen"}}>
-        <h2>Child Page</h2>
-        <Link to="/child/grandchild">Grandchild</Link><br/>
-        <Link to="/">Home</Link><br/><br/>
+      <div className="page" style={{backgroundColor: "black", color: "white"}}>
+        <h2>
+          <Link to="/"><img src="./images/react.png" className="home-image"/></Link>
+          Child Page
+        </h2><hr/>
+
+        <Link to="/child/grandchild">Grandchild</Link><br/><hr/>
+
 
         <section>
-          <h4>Enter and Leave Transition Todo List</h4>
+          <h4>Enter and Leave Transition Todo List:</h4>
           <EnterLeaveTodoList/>
         </section>
 

@@ -14,8 +14,13 @@ var App = React.createClass({
     var segment = path.split('/')[1] || 'root';
     return (
       <div className="heading">
-        <h2>Homepage</h2>
-        <Link to="/child">Child</Link>
+        <ReactCSSTransitionGroup transitionName="example" transitionAppear={true}
+          transitionAppearTimeout={1500}>
+          <img src="./images/react.png" />
+        </ReactCSSTransitionGroup>
+
+        <hr/><Link to="/child">Child</Link><hr/>
+
         <ReactCSSTransitionGroup transitionName="pageSlider"
           transitionEnterTimeout={600} transitionLeaveTimeout={600}>
           {React.cloneElement(this.props.children, { key: segment })}

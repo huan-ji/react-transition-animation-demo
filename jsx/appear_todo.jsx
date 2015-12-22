@@ -3,7 +3,7 @@ var React = require('react');
 
 var AppearTodoList = React.createClass({
   getInitialState: function() {
-    return {items: ['hello', 'world', 'click', 'me']};
+    return {items: ['these', 'words', 'transition', 'in', 'when', 'mounted']};
   },
   render: function() {
     var items = this.state.items.map(function(item, i) {
@@ -17,7 +17,7 @@ var AppearTodoList = React.createClass({
     return (
       <div>
         <ReactCSSTransitionGroup transitionName="example" transitionAppear={true}
-          transitionAppearTimeout={1000}>
+          transitionAppearTimeout={1500}>
           {items}
         </ReactCSSTransitionGroup>
       </div>

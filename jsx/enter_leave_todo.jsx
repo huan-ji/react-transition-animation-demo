@@ -25,7 +25,7 @@ var EnterLeaveTodoList = React.createClass({
     }.bind(this));
     return (
       <div>
-        <button onClick={this.handleAdd}>Add Item</button>
+        <button onClick={this.handleAdd}>Click to Add Item</button>
         <ReactCSSTransitionGroup transitionName="example"
           transitionEnterTimeout={500} transitionLeaveTimeout={300}>
           {items}
